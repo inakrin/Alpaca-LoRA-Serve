@@ -13,7 +13,7 @@ def chat_stream(
     instruction,
     state_chatbot,
 ):
-    if len(context) > 1000 or len(instruction) > 300:
+    if len(context) > 1000 or len(instruction) > 3000:
         raise gr.Error("context or prompt is too long!")
     
     bot_summarized_response = ''
